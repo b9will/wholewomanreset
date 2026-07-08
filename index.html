@@ -47,9 +47,6 @@
       .wwr-hero__image { min-height: 70vw; }
       .wwr-hero__content { padding: 3rem 1.5rem; }
     }
-    /* ponytail: flip outcomes section so image is left, opposite the hero */
-    .layout495_tabs-content { grid-column: 1; grid-row: 1; }
-    .layout495_tabs-menu    { grid-column: 2; grid-row: 1; }
   </style>
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
@@ -1575,29 +1572,6 @@ margin: 0rem !important;
       }
     });
 
-    // --- Section taglines fade up ---
-    ScrollTrigger.batch('.text-style-tagline', {
-      onEnter: els => gsap.from(els, { opacity: 0, y: 14, stagger: 0.08, duration: 0.6, ease: 'power2.out' }),
-      start: 'top 90%', once: true
-    });
-
-    // --- H2 headings fade up ---
-    ScrollTrigger.batch('.heading-style-h2', {
-      onEnter: els => gsap.from(els, { opacity: 0, y: 24, stagger: 0.1, duration: 0.7, ease: 'power2.out' }),
-      start: 'top 88%', once: true
-    });
-
-    // --- Bonus / what-you-receive cards stagger ---
-    ScrollTrigger.batch('.layout615_item', {
-      onEnter: els => gsap.from(els, { opacity: 0, y: 32, stagger: 0.12, duration: 0.7, ease: 'power2.out' }),
-      start: 'top 88%', once: true
-    });
-
-    // --- FAQ items fade up ---
-    ScrollTrigger.batch('.faq3_accordion', {
-      onEnter: els => gsap.from(els, { opacity: 0, y: 18, stagger: 0.07, duration: 0.55, ease: 'power2.out' }),
-      start: 'top 90%', once: true
-    });
   })();
   </script>
 </body>
